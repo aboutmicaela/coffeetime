@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #fff2e6;
+}
+
+h1{
+    color: #ffa959;
+    font-size: 85px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bienvenidos p{
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 15px;
+}
+
+.boton1{
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    background-color: #ffa959;
+    display: block;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+nav{
+    background-color: #7b4640;
+    padding: 10px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 1300px;
+    margin-left: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.menu li a{
+    color: #ffa959;
+}
+
+.bienvenidos{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.bienvenidos p{
+    color: white;
+    font-weight: 400;
+}
+
+ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    color: #BC6F41;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.cafes article{
+    width: 320px;
+    height: 350px;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+#cappuccino{
+    background-color: #7B4640;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.boton2{
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    background-color: #ffa959;
+    display: block;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+#espresso{
+    background-color: #BC6F41;
+}
+
+.boton3{
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    background-color: #7B4640;
+    display: block;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.cafes{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 960px;
+}
+
+#mocca{
+    background-color: #FFA959;
+}
+
+.boton4{
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    background-color: #BC6F41;
+    display: block;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.footer{
+    display: flex;
+margin-left: 50px;
+}
+
+.footer li{
+    margin-left: 50px;
+    margin-right: 10px;
+    padding-top: 4px;
+}
+
+.end{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.end p{
+    color: #FFA959;
+    padding-top: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    padding-left: 200px;
+}
+
+footer{
+    background-color: #7b4640;
+    padding: 10px;
+}
+
+.boton1:hover{
+    color: #491E1A;
+    background-color: #F9BE93;
+}
+
+.boton2:hover{
+    color: #491E1A;
+    background-color: #F9BE93;
+}
+
+.boton3:hover{
+    color: #491E1A;
+    background-color: #F9BE93;
+}
+
+.boton4:hover{
+    color: #491E1A;
+    background-color: #F9BE93;
+}
+
+.menu li a:hover{
+    color: #FFDFC0;
+}
+
+.menu img:hover{
+    filter: brightness(1.18);
+}
+
+.footer img:hover{
+    filter: brightness(1.18);
+}
