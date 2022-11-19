@@ -10,17 +10,23 @@ body{
     background-color: #fff2e6;
 }
 
+#cafe1{
+    width: 1300px;
+    height: 0 auto;
+}
+
 h1{
     color: #ffa959;
-    font-size: 85px;
+    font-size: 75px;
     font-weight: 900;
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .bienvenidos p{
     font-weight: 100;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     margin-bottom: 20px;
     line-height: 15px;
@@ -29,10 +35,10 @@ h1{
 .boton1{
     color: white;
     width: 200px;
-    height: 50px;
-    font-size: 16px;
+    height: 40px;
+    font-size: 15px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-weight: 700;
     background-color: #ffa959;
     display: block;
@@ -42,14 +48,13 @@ h1{
 
 nav{
     background-color: #7b4640;
-    padding: 10px;
+    padding: 6px;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .logo{
@@ -59,6 +64,12 @@ nav{
 
 a{
     text-decoration: none;
+    font-size: 12px;
+}
+
+.menu a img{
+    width: 25px;
+    height: 0 auto;
 }
 
 ul{
@@ -83,16 +94,12 @@ ul{
 }
 
 .bienvenidos{
-    background-image: url(img/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .bienvenidos p{
-    color: white;
+    color: #7b4640;
     font-weight: 400;
 }
 
@@ -104,7 +111,7 @@ ul li{
 h2{
     color: #BC6F41;
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     margin-top: 50px;
 }
 
@@ -134,15 +141,16 @@ h3{
     color: white;
     font-size: 20px;
     margin-bottom: 20px;
+    margin-top: 9px;
 }
 
 .boton2{
     color: white;
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 40px;
     font-size: 16px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-weight: 700;
     background-color: #ffa959;
     display: block;
@@ -156,11 +164,11 @@ h3{
 
 .boton3{
     color: white;
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 40px;
     font-size: 16px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-weight: 700;
     background-color: #7B4640;
     display: block;
@@ -181,11 +189,11 @@ h3{
 
 .boton4{
     color: white;
-    width: 200px;
-    height: 50px;
+    width: 170px;
+    height: 40px;
     font-size: 16px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-weight: 700;
     background-color: #BC6F41;
     display: block;
@@ -193,9 +201,53 @@ h3{
     margin-top: 30px;
 }
 
+#conocenos{
+    background-color: #BC6F41;
+    margin-top: -20px;
+}
+
+.titulohis{
+    width: 592px;
+    height: 450px;
+    padding: 20px;
+    margin: 50px;
+    font-size: 18px;
+}
+
+.historia{
+    padding-top: 20px;
+    padding-left: 30p;
+}
+
+#conocenos h2{
+    color:  #FFA959;
+    padding-bottom: 1px;
+    text-align: left;
+    padding-top: 35px;
+}
+
+.foto{
+    width: 650px;
+    height: 0 auto;
+    float: right;
+
+}
+
+.foto img{
+    width: 650px;
+    height: 0 auto;
+    padding-top: 50px;
+}
+
+#conocenos p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .footer{
     display: flex;
-margin-left: 50px;
+    margin-left: 50px;
 }
 
 .footer li{
@@ -253,4 +305,68 @@ footer{
 
 .footer img:hover{
     filter: brightness(1.18);
+}
+
+.formulario{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+form{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.formulario p{
+    display: block;
+    text-align: center;
+    padding: 7px;
+}
+
+.formulario h2{
+    color: #7B4640;
+}
+
+#contactar{
+    background-color: #F9BE93;
+    padding: 10px 0 50px 0;
+}
+
+#nombre-y-apellido,#correo-electronico{
+    padding: 10px;
+}
+
+#escribe-tu-consulta{
+    padding: 10px;
+}
+
+#nombre-y-apellido,#correo-electronico,#escribe-tu-consulta{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.espaciado{
+    margin: 16px 0;
+}
+
+#myCarousel {
+    color: #000000;
+    --carousel-button-bg: #ffffff40;
+    --carousel-button-svg-width: 50px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2;
+}
+
+.carousel__slide {
+    background-size: cover;
+    width: 1350px;
+    height: 550px;
 }
