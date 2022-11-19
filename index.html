@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CoffeeTime | Tienda online de café</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -16,14 +17,25 @@
             <p class="logo"><img src="img/logo.png" alt=""></p>
             <ul class="menu">
             <li> <a href="#">INICIO</a></li>
-            <li> <a href="#">CONÓCENOS</a></li>
-            <li> <a href="#">PRODUCTOS</a></li>
+            <li> <a href="#conocenos">CONÓCENOS</a></li>
+            <li> <a href="#productos">PRODUCTOS</a></li>
             <li> <a href="#">LOCALES</a></li>
-            <li> <a href="#">CONTACTO</a></li>
+            <li> <a href="#contactar">CONTACTO</a></li>
             <li> <a href="#"> <img src="img/carrito.png" alt="carrito"></a></li>
             </ul>
         </div>
     </nav>
+
+    <div id="myCarousel" class="carousel">
+        <div class="carousel__slide" data-lazy-src="img/cafe1.jpg">
+        </div>
+        <div class="carousel__slide" data-lazy-src="img/cafe2.jpg">
+        </div>
+        <div class="carousel__slide" data-lazy-src="img/cafe4.jpg">
+        </div>
+        <div class="carousel__slide" data-lazy-src="img/cafe3.jpg">
+        </div>
+    </div>
 
     <header>
         <div class="bienvenidos">
@@ -31,32 +43,83 @@
         <p><strong>¡Bienvenidos a CoffeeTime!</strong></p>
         <p>Aquí podrás encontrar el mejor café de latinoamérica.
         <p>Siéntate, <strong>¡el primero va por nuestra cuenta!</strong></p>
-        <a class="boton1" href="#">VER PRODUCTOS</a>
+        <a class="boton1" href="#productos">VER PRODUCTOS</a>
     </div>
     </header>
 
-    <section class="contenedor">
+    <section id="conocenos">
+        <div class="imgcafe">
+        <p class="foto"><img src="img/cafehistoria.jpg" alt="historia"></div></p>
+    <div class="titulohis">
+        <h2>¿CÓMO COMENZÓ TODO?</h2>
+        <p class="historia">
+    CoffeeTime nace en 1994 en Argentina, cuando una familia decide colocar
+    un emprendimiento de algo que amaban mucho: <strong>el café</strong>.
+    Con ayuda de una receta de la abuela, lograron crear lo que hoy conocemos
+    como Cappuccino helado, nombre que le colocaron en honor al apellido de ella:
+    "Cappucci". Alrededor de 2001, CoffeeTime ya era una empresa multinacional, exportando café para más de 20 países latinoamericanos. 
+    ¡Te invitamos a conocernos! Estamos seguros que no te arrepentirás.</p></div>
+    </section>
+
+    <section class="contenedor" id="productos">
         <h2>PRUEBA NUESTRAS ESPECIALIDADES</h2>
         <div class="cafes">
             <article id="cappuccino">
                 <h3>CAPPUCCINO</h3>
                 <img src="img/cappuccino.png" alt="cappuccino">
-                <a class="boton2" href="#">COMPRAR</a>
+                <a class="boton2" href="#">MÁS INFO</a>
             </article>
 
             <article id="espresso">
                 <h3>ESPRESSO</h3>
                 <img src="img/espresso.png" alt="espresso">
-                <a class="boton3" href="#">COMPRAR</a>
+                <a class="boton3" href="#">MÁS INFO</a>
             </article>
 
             <article id="mocca">
                 <h3>MOCCA</h3>
                 <img src="img/mocca.png" alt="mocca">
-                <a class="boton4" href="#">COMPRAR</a>
+                <a class="boton4" href="#">MÁS INFO</a>
             </article>
         </div>
 </section>
+
+<section class="galeria">
+    <a href="foto" title="foto"></a>
+        <img src="foto" alt="">
+
+        <a href="foto" title=""></a>
+        <img src="foto" alt="">
+
+        <a href="foto" title=""></a>
+        <img src="foto" alt="">
+</section>
+
+<section id="contactar">
+    <div class="formulario">
+        <h2>Contáctanos</h2>
+        <p>Por cualquier consulta, completa el siguiente formulario:</p>
+        <form action="" method="post">
+            <div class="espaciado">
+                <label for="nombre-y-apellido">Nombre y apellido:</label>
+                <input type="text" name="nombre-y-apellido" id="nombre-y-apellido" required placeholder="Ingresa tu nombre y apellido*">
+            </div>
+            <div class="espaciado">
+                <label for="correo-electronico">Correo electrónico:</label>
+                <input type="email" name="correo-electronico" id="correo-electronico" required placeholder="Ingresa tu correo electrónico*">
+            </div>
+            <div class="espaciado">
+                <label for="escribe-tu-consulta">Escribe tu consulta:</label>
+                <textarea name="escribe-tu-consulta" id="escribe-tu-consulta" cols="30" rows="10" placeholder="Ingresa tu consulta"></textarea>
+            </div>
+            <div class="espaciado">
+                <button type="submit" class="enviar">Enviar consulta</button>
+                <button type="reset" class="borrar">Borrar campos</button>
+            </div>
+        </form>
+    </div>
+</section>
+
 <footer>
     <div class="end">
         <ul class="footer">
@@ -67,6 +130,25 @@
         </ul>
     <p>Diseñado por Micaela Mammarella © Todos los derechos reservados.</p>
     </div>
+
+
 </footer>
+<!-- jquery -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+    const myCarousel = new Carousel(document.querySelector(".carousel"), {
+slides: [
+    {
+    html: "1",
+    },
+    {
+    html: "2",
+    },
+    {
+    html: "3",
+    },
+],
+});
+</script>
 </body>
 </html>
