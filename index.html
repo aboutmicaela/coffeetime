@@ -18,9 +18,10 @@
             <ul class="menu">
             <li> <a href="#">INICIO</a></li>
             <li> <a href="#conocenos">CONÓCENOS</a></li>
+            <li> <a href="#intro-productos">ESPECIALIDADES</a></li>
             <li> <a href="#productos">PRODUCTOS</a></li>
-            <li> <a href="#">LOCALES</a></li>
-            <li> <a href="#contactar">CONTACTO</a></li>
+            <li> <a href="#contactar">COMBOS</a></li>
+            <li> <a href="#contactar">CONTÁCTANOS</a></li>
             <li> <a href="#"> <img src="img/carrito.png" alt="carrito"></a></li>
             </ul>
         </div>
@@ -56,43 +57,72 @@
     CoffeeTime nace en 1994 en Argentina, cuando una familia decide colocar
     un emprendimiento de algo que amaban mucho: <strong>el café</strong>.
     Con ayuda de una receta de la abuela, lograron crear lo que hoy conocemos
-    como Cappuccino, nombre que le colocaron en honor al apellido de ella:
+    como Cappuccino helado, nombre que le colocaron en honor al apellido de ella:
     "Cappucci". Alrededor de 2001, CoffeeTime ya era una empresa multinacional, exportando café para más de 20 países latinoamericanos. 
     ¡Te invitamos a conocernos! Estamos seguros que no te arrepentirás.</p></div>
     </section>
 
-    <section class="contenedor" id="productos">
+    <section class="contenedor" id="intro-productos">
         <h2>PRUEBA NUESTRAS ESPECIALIDADES</h2>
         <div class="cafes">
-            <article id="cappuccino">
-                <h3>CAPPUCCINO</h3>
+            <article id="cappuccino" class="card">
                 <img src="img/cappuccino.png" alt="cappuccino">
-                <a class="boton2" href="#">MÁS INFO</a>
+                <h3>CAPPUCCINO</h3>
+                <p>Nuestro cappuccino está preparado con café espresso y leche montada con
+                vapor para darle cremosidad. También, le agregamos cacao en polvo o canela según se prefiera.
+                Para terminar, ¡puedes elegir el arte de latte que más te guste!</p>
+                <a class="boton2" href="#">Más información</a>
             </article>
 
-            <article id="espresso">
-                <h3>ESPRESSO</h3>
+            <article id="espresso" class="card">
                 <img src="img/espresso.png" alt="espresso">
-                <a class="boton3" href="#">MÁS INFO</a>
+                <h3>ESPRESSO</h3>
+                <p>
+                Nuestro espresso se caracteriza por su rápida preparación a una alta presión y por un sabor y textura más concentrada.
+                Esto se logra con un molido muy fino. Además, es preparado en una de las mejores máquinas del mundo.
+                </p>
+                <a class="boton3" href="#">Más información</a>
             </article>
 
-            <article id="mocca">
-                <h3>MOCCA</h3>
-                <img src="img/mocca.png" alt="mocca">
-                <a class="boton4" href="#">MÁS INFO</a>
+            <article id="latte" class="card">
+                <img src="img/latte.png" alt="latte">
+                <h3>LATTÉ</h3>
+                <p>
+                Nuestro latté está preparado con espresso y leche vaporizada. Puedes elegir entre leche común, leche de soja o leche de almendras.
+                La misma puede estar fría o caliente y también puedes agregarle cacao, canela, vainilla, caramelo, crema, etc.
+                </p>
+                <a class="boton4" href="#">Más información</a>
             </article>
         </div>
 </section>
 
-<section class="galeria">
-    <a href="foto" title="foto"></a>
-        <img src="foto" alt="">
+<section class="galeria" id="productos">
+    <h2>CONOCE NUESTROS PRODUCTOS</h2>
+    <div class="productos">
+        <a href="img/productos/cafe-instantaneo.jpg" data-fancybox="gallery" data-caption="CAFÉ INSTANTÁNEO" title="producto1">
+            <img src="img/productos/chicas/1.jpg" alt="cafe-instantaneo">
+        </a>
 
-        <a href="foto" title=""></a>
-        <img src="foto" alt="">
+        <a href="img/productos/cafe-suave.jpg" data-fancybox="gallery" data-caption="CAFÉ SUAVE" title="producto2">
+            <img src="img/productos/chicas/2.jpg" alt="cafe-suave">
+        </a>
 
-        <a href="foto" title=""></a>
-        <img src="foto" alt="">
+        <a href="img/productos/engranos.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS" title="producto3">
+            <img src="img/productos/chicas/3.jpg" alt="cafe-en-granos">
+        </a>
+
+        <a href="img/productos/granulado.jpg" data-fancybox="gallery" data-caption="CAFÉ GRANULADO" title="producto4">
+            <img src="img/productos/chicas/4.jpg" alt="cafe-granulado">
+        </a>
+
+        <a href="img/productos/robustapremium.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS ROBUSTA PREMIUM" title="producto5">
+            <img src="img/productos/chicas/5.jpg" alt="cafe-en-granos-robusta-premium">
+        </a>
+
+        <a href="img/productos/arabicapremium.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS ARÁBICA PREMIUM" title="producto6">
+            <img src="img/productos/chicas/6.jpg" alt="cafe-en-granos-arabica-premium">
+        </a>
+    </div>
 </section>
 
 <section id="contactar">
@@ -133,19 +163,13 @@
 
 
 </footer>
-<!-- jquery -->
+
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script>
     const myCarousel = new Carousel(document.querySelector(".carousel"), {
 slides: [
     {
     html: "1",
-    },
-    {
-    html: "2",
-    },
-    {
-    html: "3",
     },
 ],
 });
