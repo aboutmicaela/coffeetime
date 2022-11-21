@@ -254,6 +254,7 @@ h3{
 
 .galeria img{
     border-radius: 10px;
+    cursor: zoom-in;
 }
 
 .footer{
@@ -336,11 +337,14 @@ form{
 .formulario p{
     display: block;
     text-align: center;
-    padding: 7px;
+    padding: 10px;
+    font-weight: 700;
 }
 
 .formulario h2{
     color: #7B4640;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #contactar{
@@ -358,18 +362,83 @@ form{
 
 #nombre-y-apellido,#correo-electronico,#escribe-tu-consulta{
     display: block;
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     border: none;
 }
 
-label{
-    display: block;
+#titulo-form{
+    display: flex;
     margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 220px;
+}
+
+textarea{
+    font-size: 11px;
+}
+
+input{
+    font-size: 11px;
 }
 
 .espaciado{
     margin: 16px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enviar{
+    color: white;
+    width: 170px;
+    height: 35px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    background-color: #BC6F41;
+    border-radius: 30px;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease-in-out;
+}
+
+.borrar{
+    color:white;
+    width: 150px;
+    height: 34px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    background-color: #882c1b;
+    border-radius: 30px;
+    margin-top: 30px;
+    align-items: center;
+    margin: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease-in-out;
+}
+
+.enviar:hover{
+    color: white;
+    background-color: #6a342d;
+    cursor: pointer;
+}
+
+.borrar:hover{
+    color:white;
+    background-color: #570d00;
+    cursor: pointer;
 }
 
 #myCarousel {
