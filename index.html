@@ -5,41 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CoffeeTime | Tienda online de café</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
-    <link rel="stylesheet" href="estilos.css">
 </head>
 
+<!-- MENÚ -->
 <body>
     <nav>
         <div class="flex">
-            <p class="logo"><img src="img/logo.png" alt=""></p>
+            <a href="#"><img id="logo" src="img/logo.png" alt="logo"></a>
             <ul class="menu">
             <li> <a href="#">INICIO</a></li>
             <li> <a href="#conocenos">CONÓCENOS</a></li>
             <li> <a href="#intro-productos">ESPECIALIDADES</a></li>
             <li> <a href="#productos">PRODUCTOS</a></li>
-            <li> <a href="#contactar">COMBOS</a></li>
+            <li> <a href="#ofertas">COMBOS</a></li>
             <li> <a href="#contactar">CONTÁCTANOS</a></li>
             <li> <a href="#"> <img src="img/carrito.png" alt="carrito"></a></li>
             </ul>
         </div>
     </nav>
+<!-- FIN MENÚ -->
 
-    <div id="myCarousel" class="carousel">
-        <div class="carousel__slide" data-lazy-src="img/cafe1.jpg">
-        </div>
-        <div class="carousel__slide" data-lazy-src="img/cafe2.jpg">
-        </div>
-        <div class="carousel__slide" data-lazy-src="img/cafe4.jpg">
-        </div>
-        <div class="carousel__slide" data-lazy-src="img/cafe3.jpg">
-        </div>
-    </div>
+<!-- SLIDER -->
+<figure class="galeria">
+            <div id="myCarousel" class="carousel">
+            <div class="carousel__slide">
+                <img data-lazy-src="img/cafe1.jpg">
+            </div>
+            <div class="carousel__slide">
+                <img data-lazy-src="img/cafe2.jpg">
+            </div>
+            <div class="carousel__slide">
+                <img data-lazy-src="img/cafe3.jpg">
+            </div>
+            <div class="carousel__slide">
+                <img data-lazy-src="img/cafe4.jpg">
+            </div>
+</figure>
+<!-- FIN SLIDER -->
 
-    <header>
-        <div class="bienvenidos">
+<!-- HERO -->
+    <header class="fondo">
+    <div class="bienvenidos">
         <h1>COFFEETIME</h1>
         <p><strong>¡Bienvenidos a CoffeeTime!</strong></p>
         <p>Aquí podrás encontrar el mejor café de latinoamérica.
@@ -47,21 +57,28 @@
         <a class="boton1" href="#productos">VER PRODUCTOS</a>
     </div>
     </header>
+<!-- FIN HERO -->
 
+<!-- CONÓCENOS -->
     <section id="conocenos">
-        <div class="imgcafe">
-        <p class="foto"><img src="img/cafehistoria.jpg" alt="historia"></div></p>
-    <div class="titulohis">
-        <h2>¿CÓMO COMENZÓ TODO?</h2>
-        <p class="historia">
-    CoffeeTime nace en 1994 en Argentina, cuando una familia decide colocar
-    un emprendimiento de algo que amaban mucho: <strong>el café</strong>.
-    Con ayuda de una receta de la abuela, lograron crear lo que hoy conocemos
-    como Cappuccino helado, nombre que le colocaron en honor al apellido de ella:
-    "Cappucci". Alrededor de 2001, CoffeeTime ya era una empresa multinacional, exportando café para más de 20 países latinoamericanos. 
-    ¡Te invitamos a conocernos! Estamos seguros que no te arrepentirás.</p>
+        <div class="contenedor" id="columnas">
+            <div class="titulohis">
+                <h2 class="tituloconocenos">¿CÓMO COMENZÓ TODO?</h2>
+                <p class="historia">
+                CoffeeTime nace en 1994 en Argentina, cuando una familia decide colocar
+                un emprendimiento de algo que amaban mucho: <strong>el café</strong>.
+                Con ayuda de una receta de la abuela, lograron crear lo que hoy conocemos
+                como Cappuccino helado, nombre que le colocaron en honor al apellido de ella:
+                "Cappucci". Alrededor de 2001, CoffeeTime ya era una empresa multinacional, exportando café para más de 20 países latinoamericanos. 
+                ¡Te invitamos a conocernos! Estamos seguros que no te arrepentirás.</p>
+            </div>
+            <div class="imgcafe">
+                <img class="foto" src="img/cafehistoria.jpg" alt="historia"></div>
+        </div>
     </section>
+<!-- FIN SECCIÓN CONÓCENOS -->
 
+<!-- INTRO PROCUCTOS -->
     <section class="contenedor" id="intro-productos">
         <h2>PRUEBA NUESTRAS ESPECIALIDADES</h2>
         <div class="cafes">
@@ -95,50 +112,86 @@
             </article>
         </div>
 </section>
+<!-- FIN INTRO PRODUCTOS -->
 
+<!-- GALERÍA -->
 <section class="galeria" id="productos">
     <h2>CONOCE NUESTROS PRODUCTOS</h2>
     <div class="productos">
-        <a href="img/productos/cafe-instantaneo.jpg" data-fancybox="gallery" data-caption="CAFÉ INSTANTÁNEO" title="producto1">
+        <a href="img/productos/1.jpg" data-fancybox="gallery" data-caption="CAFÉ INSTANTÁNEO">
             <img src="img/productos/chicas/1.jpg" alt="cafe-instantaneo">
         </a>
 
-        <a href="img/productos/cafe-suave.jpg" data-fancybox="gallery" data-caption="CAFÉ SUAVE" title="producto2">
+        <a href="img/productos/2.jpg" data-fancybox="gallery" data-caption="CAFÉ SUAVE">
             <img src="img/productos/chicas/2.jpg" alt="cafe-suave">
         </a>
 
-        <a href="img/productos/engranos.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS" title="producto3">
-            <img src="img/productos/chicas/3.jpg" alt="cafe-en-granos">
+        <a href="img/productos/3.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS">
+            <img src="img/productos/chicas/3.jpg" alt="cafe-granulado">
         </a>
 
-        <a href="img/productos/granulado.jpg" data-fancybox="gallery" data-caption="CAFÉ GRANULADO" title="producto4">
-            <img src="img/productos/chicas/4.jpg" alt="cafe-granulado">
+        <a href="img/productos/4.jpg" data-fancybox="gallery" data-caption="CAFÉ GRANULADO">
+            <img src="img/productos/chicas/4.jpg" alt="cafe-en-granos">
         </a>
 
-        <a href="img/productos/robustapremium.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS ROBUSTA PREMIUM" title="producto5">
+        <a href="img/productos/5.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS ROBUSTA PREMIUM">
             <img src="img/productos/chicas/5.jpg" alt="cafe-en-granos-robusta-premium">
         </a>
 
-        <a href="img/productos/arabicapremium.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS ARÁBICA PREMIUM" title="producto6">
+        <a href="img/productos/6.jpg" data-fancybox="gallery" data-caption="CAFÉ EN GRANOS ARÁBICA PREMIUM">
             <img src="img/productos/chicas/6.jpg" alt="cafe-en-granos-arabica-premium">
         </a>
     </div>
 </section>
+<!-- FIN GALERÍA -->
 
-<section id="contactar">
+<!-- COMBOS -->
+<section class="contenedor-ofertas" id="ofertas">
+    <h2>PROMOCIONES EXCLUSIVAS</h2>
+    <div class="combos">
+        <article id="combo1" class="card">
+            <img src="img/combo1.png" alt="cappuccino">
+            <h3>ESPRESSO CLÁSICO + ESPRESSO SUAVE
+            </h3>
+            <p>$1300</p>
+            <a class="boton2" href="#">COMPRAR</a>
+        </article>
+
+        <article id="combo2" class="card">
+            <img src="img/combo2.png" alt="espresso">
+            <h3>ESPRESSO CLÁSICO + GRANULADO</h3>
+            <p>
+            $1500
+            </p>
+            <a class="boton3" href="#">COMPRAR</a>
+        </article>
+
+        <article id="combo3" class="card">
+            <img src="img/combo3.png" alt="latte">
+            <h3>ROBUSTA PREMIUM + ARÁBICA PREMIUM</h3>
+            <p>
+            $1800
+            </p>
+            <a class="boton4" href="#">COMPRAR</a>
+        </article>
+    </div>
+
+    <div><a class="boton5" href="#">VER MÁS COMBOS</a></div>
+<!-- FORMULARIO -->
+<section class="form-contenedor" id="contactar">
     <div class="formulario">
         <h2>CONTÁCTANOS</h2>
-        <form action="" method="post">
+        <form action="consulta" method="post">
             <div class="espaciado">
-                <label id="titulo-form" for="nombre-y-apellido">Nombre y apellido:</label>
+                <label for="nombre-y-apellido">Nombre y apellido:</label>
                 <input type="text" name="nombre-y-apellido" id="nombre-y-apellido" required placeholder="Ingresa tu nombre y apellido*">
             </div>
             <div class="espaciado">
-                <label id="titulo-form" for="correo-electronico">Correo electrónico:</label>
+                <label for="correo-electronico">Correo electrónico:</label>
                 <input type="email" name="correo-electronico" id="correo-electronico" required placeholder="Ingresa tu correo electrónico*">
             </div>
             <div class="espaciado">
-                <label id="titulo-form" for="escribe-tu-consulta">Escribe tu consulta:</label>
+                <label for="escribe-tu-consulta">Escribe tu consulta:</label>
                 <textarea name="escribe-tu-consulta" id="escribe-tu-consulta" cols="30" rows="10" placeholder="Ingresa tu consulta..."></textarea>
             </div>
             <div class="botones">
@@ -148,7 +201,9 @@
         </form>
     </div>
 </section>
+<!-- FIN FORMULARIO -->
 
+<!-- FOOTER -->
 <footer>
     <div class="end">
         <ul class="footer">
@@ -159,19 +214,26 @@
         </ul>
     <p>Diseñado por Micaela Mammarella © Todos los derechos reservados.</p>
     </div>
-
-
 </footer>
+<!-- FIN FOOTER -->
 
+<!-- JQUERY -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script>
-    const myCarousel = new Carousel(document.querySelector(".carousel"), {
+const myCarousel = new Carousel(document.querySelector(".carousel"), {
 slides: [
     {
     html: "1",
     },
+    {
+    html: "2",
+    },
+    {
+    html: "3",
+    },
 ],
 });
 </script>
+<!-- FIN JQUERY -->
 </body>
 </html>
