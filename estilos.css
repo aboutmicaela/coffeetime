@@ -98,7 +98,7 @@ ul li{
 .carousel__slide {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1350px;
 }
 /* FIN SLIDER */
 
@@ -163,16 +163,26 @@ ul li{
 
 .titulohis{
     margin: auto;
+    width: 730px;
 }
 
 .tituloconocenos{
     color:  #FFA959;
-    text-align: left;
+    text-align: left !important;
 }
 
 .historia{
-    width: 550px;
+    text-align: left !important;
     padding-top: 20px;
+    font-size: 23px !important;
+    width: 700px;
+    font-weight: 500 !important;
+    color: #ffe1cc !important;
+}
+
+.historia2{
+    padding-top: 20px;
+    width: 700px;
 }
 
 .foto{
@@ -293,7 +303,7 @@ h3{
 }
 
 .galeria{
-    margin-top: 30px;
+    padding-top: 49px;
 }
 
 .galeria a{
@@ -305,12 +315,16 @@ h3{
     transform: scale(102%);
 }
 
-.galeria img{
+.productos img{
     border-radius: 10px;
 }
 /* FIN GALERÍA */
 
 /* COMBOS */
+
+.contenedor-ofertas{
+    padding-top: 80px;
+}
 
 .combos article{
     width: 305px;
